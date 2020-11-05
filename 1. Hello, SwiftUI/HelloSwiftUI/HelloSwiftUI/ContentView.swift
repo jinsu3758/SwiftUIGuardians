@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    var a = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, SwiftUI!")
+                .font(.largeTitle)  // Modifier이라고 부름
+                .fontWeight(.bold)
+                .foregroundColor(Color.pink)
+                .background(Color.yellow)
+                .padding()
+            
+            Text("Have a nice day")
+        }
+        
+        
     }
 }
 
