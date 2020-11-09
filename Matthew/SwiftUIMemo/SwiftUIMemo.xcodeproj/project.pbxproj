@@ -15,6 +15,7 @@
 		CA5F9E02255828DC00777A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5F9E00255828DC00777A84 /* LaunchScreen.storyboard */; };
 		CA5F9E0D255830B700777A84 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F9E0C255830B700777A84 /* Memo.swift */; };
 		CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E4B25597D19007FAD94 /* MemoStore.swift */; };
+		CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CA5F9E03255828DC00777A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5F9E0C255830B700777A84 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CA937E4B25597D19007FAD94 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				CA5F9E00255828DC00777A84 /* LaunchScreen.storyboard */,
 				CA5F9E03255828DC00777A84 /* Info.plist */,
 				CA5F9DFD255828DC00777A84 /* Preview Content */,
+				CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */,
 			);
 			path = SwiftUIMemo;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				CA5F9DF6255828DB00777A84 /* AppDelegate.swift in Sources */,
 				CA5F9DF8255828DB00777A84 /* SceneDelegate.swift in Sources */,
 				CA5F9DFA255828DB00777A84 /* MemoListScene.swift in Sources */,
+				CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */,
 				CA5F9E0D255830B700777A84 /* Memo.swift in Sources */,
 			);
@@ -361,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */,
+			);
+			currentVersion = CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */;
+			path = SwiftUIMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA5F9DEA255828DB00777A84 /* Project object */;
 }
