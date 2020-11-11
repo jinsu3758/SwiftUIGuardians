@@ -15,6 +15,8 @@
 		CA5F9E02255828DC00777A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5F9E00255828DC00777A84 /* LaunchScreen.storyboard */; };
 		CA5F9E0D255830B700777A84 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F9E0C255830B700777A84 /* Memo.swift */; };
 		CA709500255C3BF0002ABB0B /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7094FF255C3BF0002ABB0B /* DateFormatter+Memo.swift */; };
+		CA709504255C40A5002ABB0B /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709503255C40A5002ABB0B /* MemoCell.swift */; };
+		CA70950A255C4428002ABB0B /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709509255C4428002ABB0B /* ComposeScene.swift */; };
 		CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E4B25597D19007FAD94 /* MemoStore.swift */; };
 		CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		CA5F9E03255828DC00777A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5F9E0C255830B700777A84 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CA7094FF255C3BF0002ABB0B /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
+		CA709503255C40A5002ABB0B /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		CA709509255C4428002ABB0B /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 		CA937E4B25597D19007FAD94 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,11 +68,11 @@
 		CA5F9DF4255828DB00777A84 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA709507255C43DC002ABB0B /* Scene */,
 				CA7094FD255C3BD5002ABB0B /* Extension */,
 				CA5F9E0B2558308B00777A84 /* Model */,
 				CA5F9DF5255828DB00777A84 /* AppDelegate.swift */,
 				CA5F9DF7255828DB00777A84 /* SceneDelegate.swift */,
-				CA5F9DF9255828DB00777A84 /* MemoListScene.swift */,
 				CA5F9DFB255828DC00777A84 /* Assets.xcassets */,
 				CA5F9E00255828DC00777A84 /* LaunchScreen.storyboard */,
 				CA5F9E03255828DC00777A84 /* Info.plist */,
@@ -101,6 +105,24 @@
 				CA7094FF255C3BF0002ABB0B /* DateFormatter+Memo.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CA709502255C4098002ABB0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA709503255C40A5002ABB0B /* MemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA709507255C43DC002ABB0B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CA709502255C4098002ABB0B /* View */,
+				CA5F9DF9255828DB00777A84 /* MemoListScene.swift */,
+				CA709509255C4428002ABB0B /* ComposeScene.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +202,8 @@
 				CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */,
 				CA5F9E0D255830B700777A84 /* Memo.swift in Sources */,
+				CA709504255C40A5002ABB0B /* MemoCell.swift in Sources */,
+				CA70950A255C4428002ABB0B /* ComposeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
