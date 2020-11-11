@@ -15,7 +15,9 @@ class MemoStore: ObservableObject {
         list = [
             Memo(content: "Lorem Ipsum"),
             Memo(content: "Lorem Ipsum 2"),
-            Memo(content: "Lorem Ipsum 3")
+            Memo(content: "Lorem Ipsum 3"),
+            Memo(content: "Lorem Ipm 4"),
+            Memo(content: "Lorem Ipsum 5")
         ]
     }
     
