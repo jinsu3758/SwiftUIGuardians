@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct MemoListScene: View {
+    @EnvironmentObject var store: MemoStore
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(store.list) { memo in
+                Text(memo.content)
+            }
+            .navigationTitle("Devil의 Memo")
+        }
     }
 }
 
 struct MemoListScene_Previews: PreviewProvider {
     static var previews: some View {
         MemoListScene()
+            .environmentObject(MemoStore())
     }
 }
