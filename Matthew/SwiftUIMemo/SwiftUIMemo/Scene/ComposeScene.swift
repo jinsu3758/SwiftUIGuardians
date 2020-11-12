@@ -26,7 +26,7 @@ struct ComposeScene: View {
 fileprivate struct DismissButton: View {
     var body: some View {
         Button(action: {
-            
+            print("취소")
         }, label: {
             Text("취소")
         })
@@ -36,10 +36,10 @@ fileprivate struct DismissButton: View {
 fileprivate struct SaveButton: View {
     var body: some View {
         Button(action: {
-                
+                print("저장")
             },
             label: {
-                print("저장")
+                Text("저장")
             }
         )
         
