@@ -16,6 +16,9 @@
 		74EF064325555FC700782296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EF064125555FC700782296 /* LaunchScreen.storyboard */; };
 		74EF064E2555768500782296 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF064D2555768500782296 /* Memo.swift */; };
 		74EF06522558FAB400782296 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF06512558FAB400782296 /* MemoStore.swift */; };
+		74EF0697255B9F0300782296 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF0696255B9F0300782296 /* DateFormatterExtension.swift */; };
+		74EF069D255BB50500782296 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF069C255BB50500782296 /* MemoCell.swift */; };
+		74EF06D7255CCF3800782296 /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF06D6255CCF3800782296 /* ComposeScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		74EF064425555FC700782296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74EF064D2555768500782296 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		74EF06512558FAB400782296 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		74EF0696255B9F0300782296 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		74EF069C255BB50500782296 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		74EF06D6255CCF3800782296 /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,11 @@
 		74EF063225555FC500782296 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				74EF06D4255CCEF900782296 /* Scene */,
+				74EF0695255B9EE200782296 /* Extension */,
 				74EF064C2555766700782296 /* Model */,
 				74EF063325555FC600782296 /* AppDelegate.swift */,
 				74EF063525555FC600782296 /* SceneDelegate.swift */,
-				74EF063725555FC600782296 /* MemoListScene.swift */,
 				74EF063C25555FC700782296 /* Assets.xcassets */,
 				74EF064125555FC700782296 /* LaunchScreen.storyboard */,
 				74EF064425555FC700782296 /* Info.plist */,
@@ -90,6 +97,32 @@
 				74EF06512558FAB400782296 /* MemoStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		74EF0695255B9EE200782296 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74EF0696255B9F0300782296 /* DateFormatterExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		74EF069B255BB4E700782296 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74EF069C255BB50500782296 /* MemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74EF06D4255CCEF900782296 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				74EF069B255BB4E700782296 /* View */,
+				74EF063725555FC600782296 /* MemoListScene.swift */,
+				74EF06D6255CCF3800782296 /* ComposeScene.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				74EF063425555FC600782296 /* AppDelegate.swift in Sources */,
+				74EF0697255B9F0300782296 /* DateFormatterExtension.swift in Sources */,
 				74EF06522558FAB400782296 /* MemoStore.swift in Sources */,
 				74EF063B25555FC600782296 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				74EF063625555FC600782296 /* SceneDelegate.swift in Sources */,
 				74EF063825555FC600782296 /* MemoListScene.swift in Sources */,
 				74EF064E2555768500782296 /* Memo.swift in Sources */,
+				74EF069D255BB50500782296 /* MemoCell.swift in Sources */,
+				74EF06D7255CCF3800782296 /* ComposeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
