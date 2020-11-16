@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MemoListScene: View {
     @EnvironmentObject var store: MemoStore
+    @EnvironmentObject var formatter: DateFormatter
+    
+    @State var showComposer: Bool = false
     
     var body: some View {
         NavigationView {
@@ -16,7 +19,24 @@ struct MemoListScene: View {
                 MemoCell(memo: memo)
             }
             .navigationBarTitle("내 메모")
+            .navigationBarItems(trailing: ModalButton(show: $showComposer))
+            .sheet(isPresented: $showComposer, content: {
+                ComposeScene(showComposer: $showComposer)
+                    .environmentObject(self.store)
+            })
         }
+    }
+}
+
+fileprivate struct ModalButton: View {
+    @Binding var show: Bool
+    
+    var body: some View {
+        Button(action: {
+            self.show = true
+        }, label: {
+            Image(systemName: "plus")
+        })
     }
 }
 

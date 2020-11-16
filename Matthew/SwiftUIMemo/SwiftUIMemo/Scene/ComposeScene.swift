@@ -11,21 +11,28 @@ struct ComposeScene: View {
     @EnvironmentObject var memo: MemoStore
     @State private var content: String = ""
     
+    @Binding var showComposer: Bool
+    
     var body: some View {
         NavigationView {
             VStack {
-                TextField("", text: $content)
+                TextView(text: $content)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.yellow)
+                
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationBarTitle("새 메모" , displayMode: .inline)
+            .navigationBarItems(leading: DismissButton(show: $showComposer) ,trailing: SaveButton(show: $showComposer, content: $content))
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .navigationBarTitle("새 메모" , displayMode: .inline)
-        .navigationBarItems(leading: DismissButton() ,trailing: SaveButton())
     }
 }
 
 fileprivate struct DismissButton: View {
+    @Binding var show: Bool
     var body: some View {
         Button(action: {
+            show = false
             print("취소")
         }, label: {
             Text("취소")
@@ -34,13 +41,20 @@ fileprivate struct DismissButton: View {
 }
 
 fileprivate struct SaveButton: View {
+    @Binding var show: Bool
+    
+    @EnvironmentObject var store: MemoStore
+    @Binding var content: String
+    
     var body: some View {
         Button(action: {
-                print("저장")
-            },
-            label: {
-                Text("저장")
-            }
+            self.store.insert(memo: content)
+            
+            show = false
+        },
+        label: {
+            Text("저장")
+        }
         )
         
     }
@@ -48,7 +62,7 @@ fileprivate struct SaveButton: View {
 
 struct ComposeScene_Previews: PreviewProvider {
     static var previews: some View {
-        ComposeScene()
+        ComposeScene(showComposer: .constant(false))
             .environmentObject(MemoStore())
     }
 }
