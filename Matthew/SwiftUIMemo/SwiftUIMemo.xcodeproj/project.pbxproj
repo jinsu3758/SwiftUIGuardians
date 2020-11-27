@@ -17,6 +17,8 @@
 		CA709500255C3BF0002ABB0B /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7094FF255C3BF0002ABB0B /* DateFormatter+Memo.swift */; };
 		CA709504255C40A5002ABB0B /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709503255C40A5002ABB0B /* MemoCell.swift */; };
 		CA70950A255C4428002ABB0B /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709509255C4428002ABB0B /* ComposeScene.swift */; };
+		CA7F9F2C2570AFD200D4A6A1 /* DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */; };
+		CA868A9425657AFE006A41C1 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA868A9325657AFE006A41C1 /* KeyboardObserver.swift */; };
 		CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E4B25597D19007FAD94 /* MemoStore.swift */; };
 		CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */; };
 		CA9BCE502562B39600956F37 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9BCE4F2562B39600956F37 /* TextView.swift */; };
@@ -35,6 +37,8 @@
 		CA7094FF255C3BF0002ABB0B /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
 		CA709503255C40A5002ABB0B /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		CA709509255C4428002ABB0B /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
+		CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScene.swift; sourceTree = "<group>"; };
+		CA868A9325657AFE006A41C1 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		CA937E4B25597D19007FAD94 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
 		CA9BCE4F2562B39600956F37 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		CA5F9DF4255828DB00777A84 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA868A9225657AEC006A41C1 /* Shared */,
 				CA709507255C43DC002ABB0B /* Scene */,
 				CA7094FD255C3BD5002ABB0B /* Extension */,
 				CA5F9E0B2558308B00777A84 /* Model */,
@@ -124,8 +129,17 @@
 				CA709502255C4098002ABB0B /* View */,
 				CA5F9DF9255828DB00777A84 /* MemoListScene.swift */,
 				CA709509255C4428002ABB0B /* ComposeScene.swift */,
+				CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		CA868A9225657AEC006A41C1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CA868A9325657AFE006A41C1 /* KeyboardObserver.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +214,10 @@
 			files = (
 				CA5F9DF6255828DB00777A84 /* AppDelegate.swift in Sources */,
 				CA5F9DF8255828DB00777A84 /* SceneDelegate.swift in Sources */,
+				CA868A9425657AFE006A41C1 /* KeyboardObserver.swift in Sources */,
 				CA5F9DFA255828DB00777A84 /* MemoListScene.swift in Sources */,
 				CA709500255C3BF0002ABB0B /* DateFormatter+Memo.swift in Sources */,
+				CA7F9F2C2570AFD200D4A6A1 /* DetailScene.swift in Sources */,
 				CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */,
 				CA5F9E0D255830B700777A84 /* Memo.swift in Sources */,

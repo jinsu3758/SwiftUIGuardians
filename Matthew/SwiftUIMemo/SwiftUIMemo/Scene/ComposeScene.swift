@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ComposeScene: View {
+//    @EnvironmentObject var keyboard: KeyboardObserver
     @EnvironmentObject var memo: MemoStore
     @State private var content: String = ""
     
@@ -18,6 +19,8 @@ struct ComposeScene: View {
             VStack {
                 TextView(text: $content)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                    .padding(.bottom, keyboard.context.height)
+//                    .animation(.easeInOut(duration: keyboard.context.animation))
                     .background(Color.yellow)
                 
             }
@@ -64,5 +67,6 @@ struct ComposeScene_Previews: PreviewProvider {
     static var previews: some View {
         ComposeScene(showComposer: .constant(false))
             .environmentObject(MemoStore())
+//            .environmentObject(KeyboardObserver())
     }
 }
