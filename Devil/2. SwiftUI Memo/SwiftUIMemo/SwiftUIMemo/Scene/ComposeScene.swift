@@ -14,6 +14,8 @@ struct ComposeScene: View {
     
     @Binding var showComposer: Bool
     
+    var memo: Memo?
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -25,9 +27,12 @@ struct ComposeScene: View {
                     
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationBarTitle("새 메모", displayMode: .inline)
+            .navigationBarTitle(memo != nil ? "메모 편집" : "새 메모", displayMode: .inline)
             .navigationBarItems(leading: DismissButton(show: $showComposer),
-                                trailing: SaveButton(show: $showComposer, content: $content))
+                                trailing: SaveButton(show: $showComposer, content: $content, memo: memo))
+        }
+        .onAppear { // 화면 초기화 코드 여기에 구현
+            self.content = self.memo?.content ?? ""
         }
     }
 }
@@ -50,9 +55,17 @@ fileprivate struct SaveButton: View {
     
     @EnvironmentObject var store: MemoStore
     
+    var memo: Memo?
+    
     var body: some View {
         Button(action: {
-            self.store.insert(memo: self.content)
+            if let memo = self.memo {
+                self.store.update(memo: memo, content: content)
+            }
+            else {
+                self.store.insert(memo: self.content)
+            }
+            
             self.show = false
         }, label: {
             Text("저장")

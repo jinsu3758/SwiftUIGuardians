@@ -12,6 +12,8 @@ struct DetailScene: View {
     @EnvironmentObject var store: MemoStore
     @EnvironmentObject var formatter: DateFormatter
     
+    @State private var showEditSheet: Bool = false
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -22,12 +24,20 @@ struct DetailScene: View {
                         
                         Spacer()
                     }
-                        
                     
                     Text("\(self.memo.insertDate, formatter: formatter)")
                         .padding()
                         .font(.footnote)
                         .foregroundColor(Color(UIColor.secondaryLabel))
+                }
+                
+                HStack {
+                    Button(action: {
+                        self.showEditSheet.toggle()
+                    }, label: {
+                        Image(systemName: "square.and.pencil")
+                    })
+                    .padding()
                 }
             }
         }

@@ -126,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				74EF069C255BB50500782296 /* MemoCell.swift */,
-				74F75B8225639A2500FA406F /* TextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				74EF069B255BB4E700782296 /* View */,
+				74F75B8225639A2500FA406F /* TextView.swift */,
 				74EF063725555FC600782296 /* MemoListScene.swift */,
 				74EF06D6255CCF3800782296 /* ComposeScene.swift */,
 				749E586825654DE200A41AB0 /* DetailScene.swift */,
