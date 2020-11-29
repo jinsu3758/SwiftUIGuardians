@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ComposeScene: View {
 //    @EnvironmentObject var keyboard: KeyboardObserver
-    @EnvironmentObject var memo: MemoStore
+    @EnvironmentObject var store: MemoStore
     @State private var content: String = ""
     
     @Binding var showComposer: Bool
+    
+    var memo: Memo? = nil
     
     var body: some View {
         NavigationView {
@@ -25,8 +27,11 @@ struct ComposeScene: View {
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationBarTitle("새 메모" , displayMode: .inline)
-            .navigationBarItems(leading: DismissButton(show: $showComposer) ,trailing: SaveButton(show: $showComposer, content: $content))
+            .navigationBarTitle(memo != nil ? "메모 편집" : "새 메모" , displayMode: .inline)
+            .navigationBarItems(leading: DismissButton(show: $showComposer) ,trailing: SaveButton(show: $showComposer, content: $content, memo: memo))
+        }
+        .onAppear { // UI 초기화 시점에 수행할 코드
+            self.content = self.memo?.content ?? ""
         }
     }
 }
@@ -49,15 +54,21 @@ fileprivate struct SaveButton: View {
     @EnvironmentObject var store: MemoStore
     @Binding var content: String
     
+    var memo: Memo? = nil
+    
     var body: some View {
         Button(action: {
-            self.store.insert(memo: content)
-            
-            show = false
-        },
-        label: {
-            Text("저장")
-        }
+                if let memo = memo {
+                    self.store.update(memo: memo, content: content)
+                } else {
+                    self.store.insert(memo: content)
+                }
+                
+                show = false
+            },
+            label: {
+                Text("저장")
+            }
         )
         
     }

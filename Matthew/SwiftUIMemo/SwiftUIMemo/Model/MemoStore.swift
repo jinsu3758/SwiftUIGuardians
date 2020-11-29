@@ -38,7 +38,9 @@ class MemoStore: ObservableObject {
     
     // delete
     func delete(memo: Memo) {
-        self.list.removeAll { $0 == memo }
+        DispatchQueue.main.async {
+            self.list.removeAll { $0 == memo }
+        }
     }
     
     func delete(set: IndexSet) {
