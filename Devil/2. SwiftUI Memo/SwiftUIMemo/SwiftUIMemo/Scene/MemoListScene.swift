@@ -15,16 +15,22 @@ struct MemoListScene: View {
     
     var body: some View {
         NavigationView {
-            List(store.list) { memo in
-                MemoCell(memo: memo)
+            List {
+                ForEach(store.list) { memo in
+                    NavigationLink(destination: DetailScene(memo: memo)
+                                   , label: {
+                                    MemoCell(memo: memo)
+                    })
+                }
+                .onDelete(perform: store.delete )
             }
             .navigationBarTitle("Devil의 Memo")
             .navigationTitle("Devil의 Memo") // 뭐가 달라
             .navigationBarItems(trailing: ModalButton(show: $showComposer))
             .sheet(isPresented: $showComposer, content: {
-                ComposeScene()
+                ComposeScene(showComposer: self.$showComposer)
+                    .environmentObject(KeyboardObserver())
             })
-            
         }
     }
 }
