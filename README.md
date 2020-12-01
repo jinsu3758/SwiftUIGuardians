@@ -28,6 +28,7 @@
 |---|---|---|
 |1|[devming의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Matthew-SwiftUI-Memo-48ad2d978483419db79d2b6b1844d7d2)|[정민기](https://github.com/devming)| 
 |2|[jinswift의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Devil-SwiftUI-Memo-03a2cbbd94dc4f1e8e5c82f605267bc5)|[박진수](https://github.com/jinsu3758)| 
+|3|[Property Wrapper 정리](https://www.notion.so/jinsuios/Property-Wrapper-a717f23f5b184a33b8bf8c899f73baac)|[정민기](https://github.com/devming), [박진수](https://github.com/jinsu3758)|
 
 
 
