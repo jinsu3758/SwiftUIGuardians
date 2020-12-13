@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Get the managed object context from the shared persistent container.
         let context = CoreDataManager.persistentContainer.viewContext
-        let store = MemoStore()
+        let store = CoreDataManager.shared
         
 
         // Create the SwiftUI view that provides the window contents.

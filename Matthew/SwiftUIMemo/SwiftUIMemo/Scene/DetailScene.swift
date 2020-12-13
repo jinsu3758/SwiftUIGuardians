@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct DetailScene: View {
-    @ObservedObject var memo: Memo
+    @ObservedObject var memo: MemoEntity
     
-    @EnvironmentObject var store: MemoStore
+    @EnvironmentObject var store: CoreDataManager
     @EnvironmentObject var formatter: DateFormatter
     
     @State private var showEditSheet = false
@@ -23,12 +23,12 @@ struct DetailScene: View {
             ScrollView { // 기본 수직 스크롤
                 VStack {
                     HStack {
-                        Text(self.memo.content)
+                        Text(self.memo.content ?? "")
                             .padding()
                         Spacer()
                     } // 기본 여백
                     
-                    Text("\(self.memo.insertDate, formatter: formatter)")
+                    Text("\(self.memo.insertDate ?? Date(), formatter: formatter)")
                         .padding()
                         .font(.footnote)
                         .foregroundColor(Color(.secondaryLabel))
@@ -79,8 +79,8 @@ struct DetailScene: View {
 
 struct DetailScene_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScene(memo: Memo(content: "SwiftUI"))
-            .environmentObject(MemoStore())
+        DetailScene(memo: MemoEntity())
+            .environmentObject(CoreDataManager.shared)
             .environmentObject(DateFormatter.memoDateFormatter)
     }
 }
