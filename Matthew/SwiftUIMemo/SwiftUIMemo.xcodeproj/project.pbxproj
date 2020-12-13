@@ -18,6 +18,8 @@
 		CA709504255C40A5002ABB0B /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709503255C40A5002ABB0B /* MemoCell.swift */; };
 		CA70950A255C4428002ABB0B /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709509255C4428002ABB0B /* ComposeScene.swift */; };
 		CA7F9F2C2570AFD200D4A6A1 /* DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */; };
+		CA81C8982585B39E005C5E19 /* MemoEntity+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C8972585B39E005C5E19 /* MemoEntity+Identifiable.swift */; };
+		CA81C89B2585B411005C5E19 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C89A2585B411005C5E19 /* CoreDataManager.swift */; };
 		CA868A9425657AFE006A41C1 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA868A9325657AFE006A41C1 /* KeyboardObserver.swift */; };
 		CA937E4C25597D19007FAD94 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E4B25597D19007FAD94 /* MemoStore.swift */; };
 		CA937ECE25598236007FAD94 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */; };
@@ -38,6 +40,8 @@
 		CA709503255C40A5002ABB0B /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		CA709509255C4428002ABB0B /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 		CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScene.swift; sourceTree = "<group>"; };
+		CA81C8972585B39E005C5E19 /* MemoEntity+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MemoEntity+Identifiable.swift"; sourceTree = "<group>"; };
+		CA81C89A2585B411005C5E19 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CA868A9325657AFE006A41C1 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		CA937E4B25597D19007FAD94 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		CA937ECD25598236007FAD94 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		CA5F9DF4255828DB00777A84 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA81C8952585B2C8005C5E19 /* DB */,
 				CA868A9225657AEC006A41C1 /* Shared */,
 				CA709507255C43DC002ABB0B /* Scene */,
 				CA7094FD255C3BD5002ABB0B /* Extension */,
@@ -84,7 +89,6 @@
 				CA5F9E00255828DC00777A84 /* LaunchScreen.storyboard */,
 				CA5F9E03255828DC00777A84 /* Info.plist */,
 				CA5F9DFD255828DC00777A84 /* Preview Content */,
-				CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */,
 			);
 			path = SwiftUIMemo;
 			sourceTree = "<group>";
@@ -132,6 +136,16 @@
 				CA7F9F2B2570AFD200D4A6A1 /* DetailScene.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		CA81C8952585B2C8005C5E19 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				CA937ECC25598236007FAD94 /* SwiftUIMemo.xcdatamodeld */,
+				CA81C8972585B39E005C5E19 /* MemoEntity+Identifiable.swift */,
+				CA81C89A2585B411005C5E19 /* CoreDataManager.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		CA868A9225657AEC006A41C1 /* Shared */ = {
@@ -224,6 +238,8 @@
 				CA709504255C40A5002ABB0B /* MemoCell.swift in Sources */,
 				CA70950A255C4428002ABB0B /* ComposeScene.swift in Sources */,
 				CA9BCE502562B39600956F37 /* TextView.swift in Sources */,
+				CA81C89B2585B411005C5E19 /* CoreDataManager.swift in Sources */,
+				CA81C8982585B39E005C5E19 /* MemoEntity+Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
