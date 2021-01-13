@@ -18,17 +18,25 @@
 
 |날짜|내용|작성자|
 |---|---|---|
-|1|[devming의 강의정리](https://www.notion.so/jinsuios/Hello-SwiftUI-31772d4a84b5496984ba1e3864ddcaa5)|[정민기](https://github.com/devming)| 
-|2|[jinswift의 강의정리](https://www.notion.so/jinsuios/Devil-Hello-SwiftUI-354be8f1950d4315966589167fd641f4)|[박진수](https://github.com/jinsu3758)| 
+|1|[devming의 강의정리](https://www.notion.so/Hello-SwiftUI-1989e9f6ff5e4e6191b87c9faadf364f)|[정민기](https://github.com/devming)| 
+|2|[jinswift의 강의정리](https://www.notion.so/Devil-Hello-SwiftUI-eeee5fdeff174a07aa4f9771c95871b7)|[박진수](https://github.com/jinsu3758)| 
 
 
 ### 2. SwiftUI Memo
 
 |번호|내용|작성자|
 |---|---|---|
-|1|[devming의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Matthew-SwiftUI-Memo-48ad2d978483419db79d2b6b1844d7d2)|[정민기](https://github.com/devming)| 
-|2|[jinswift의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Devil-SwiftUI-Memo-03a2cbbd94dc4f1e8e5c82f605267bc5)|[박진수](https://github.com/jinsu3758)| 
+|1|[devming의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Matthew-SwiftUI-Memo-9ea0a47a72ae462bb4865fd024aba0e9)|[정민기](https://github.com/devming)| 
+|2|[jinswift의 SwiftUI Memo 리뷰](https://www.notion.so/jinsuios/Devil-SwiftUI-Memo-03a2df2dec164f51a2fdc3205fd431bd)|[박진수](https://github.com/jinsu3758)| 
 |3|[Property Wrapper 정리](https://www.notion.so/jinsuios/Property-Wrapper-a717f23f5b184a33b8bf8c899f73baac)|[정민기](https://github.com/devming), [박진수](https://github.com/jinsu3758)|
+
+
+### 3. System Views
+
+|번호|내용|작성자|
+|---|---|---|
+|1|[devming의 Stack 정리](https://www.notion.so/Matthew-Stack-3ae1411bc7ef42b5b41b8a354a8e6561)|[정민기](https://github.com/devming)| 
+|2|[jinswift의 Stack 정리](https://www.notion.so/Devil-Stack-fa50f7533db24cc5bcbd09d6e283ee0c)|[박진수](https://github.com/jinsu3758)| 
 
 
 
