@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  SwiftUIMemo
+//  Stack
 //
-//  Created by 박진수 on 2020/11/06.
+//  Created by 박진수 on 2021/01/13.
 //
 
 import UIKit
@@ -18,18 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        // Get the managed object context from the shared persistent container.
-        let context = CoreDataManager.persistentContainer.viewContext
-        let memoStore = MemoStore()
-        
-
-        // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = MemoListScene()
-            .environment(\.managedObjectContext, context)
-            .environmentObject(memoStore)
-            .environmentObject(DateFormatter.memoDateFormatter)
-        
+        // Create the SwiftUI view that provides the window contents.
+        let contentView = HStack_View()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -66,9 +56,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
-        CoreDataManager.shared.saveContext()
     }
 
 
