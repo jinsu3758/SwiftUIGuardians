@@ -22,6 +22,8 @@
 		74EF069D255BB50500782296 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF069C255BB50500782296 /* MemoCell.swift */; };
 		74EF06D7255CCF3800782296 /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF06D6255CCF3800782296 /* ComposeScene.swift */; };
 		74F75B8325639A2500FA406F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F75B8225639A2500FA406F /* TextView.swift */; };
+		74F8F157258383AD00408FB3 /* MemoEntity+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8F156258383AD00408FB3 /* MemoEntity+Identifiable.swift */; };
+		74F8F15A258385D300408FB3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8F159258385D300408FB3 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		74EF069C255BB50500782296 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		74EF06D6255CCF3800782296 /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 		74F75B8225639A2500FA406F /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		74F8F156258383AD00408FB3 /* MemoEntity+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MemoEntity+Identifiable.swift"; sourceTree = "<group>"; };
+		74F8F159258385D300408FB3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		74EF063225555FC500782296 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				74F8F154258382CE00408FB3 /* DB */,
 				749E586325653D6C00A41AB0 /* Shared */,
 				74EF06D4255CCEF900782296 /* Scene */,
 				74EF0695255B9EE200782296 /* Extension */,
@@ -91,7 +96,6 @@
 				74EF063C25555FC700782296 /* Assets.xcassets */,
 				74EF064125555FC700782296 /* LaunchScreen.storyboard */,
 				74EF064425555FC700782296 /* Info.plist */,
-				74EF063925555FC600782296 /* SwiftUIMemo.xcdatamodeld */,
 				74EF063E25555FC700782296 /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -140,6 +144,16 @@
 				749E586825654DE200A41AB0 /* DetailScene.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		74F8F154258382CE00408FB3 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				74EF063925555FC600782296 /* SwiftUIMemo.xcdatamodeld */,
+				74F8F156258383AD00408FB3 /* MemoEntity+Identifiable.swift */,
+				74F8F159258385D300408FB3 /* CoreDataManager.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +238,8 @@
 				74EF069D255BB50500782296 /* MemoCell.swift in Sources */,
 				74EF06D7255CCF3800782296 /* ComposeScene.swift in Sources */,
 				74F75B8325639A2500FA406F /* TextView.swift in Sources */,
+				74F8F15A258385D300408FB3 /* CoreDataManager.swift in Sources */,
+				74F8F157258383AD00408FB3 /* MemoEntity+Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

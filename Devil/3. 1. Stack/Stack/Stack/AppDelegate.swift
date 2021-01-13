@@ -1,12 +1,11 @@
 //
 //  AppDelegate.swift
-//  SwiftUIMemo
+//  Stack
 //
-//  Created by 박진수 on 2020/11/06.
+//  Created by 박진수 on 2021/01/13.
 //
 
 import UIKit
-import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-   
+
 }
 
