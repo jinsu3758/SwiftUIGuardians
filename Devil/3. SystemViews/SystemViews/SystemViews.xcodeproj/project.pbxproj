@@ -19,6 +19,8 @@
 		74F0C47625C297C1008DA029 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C47525C297C1008DA029 /* DatePickerView.swift */; };
 		74F0C47A25C2991F008DA029 /* DatePickerStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C47925C2991F008DA029 /* DatePickerStyleView.swift */; };
 		74F0C47E25C2A0C6008DA029 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C47D25C2A0C6008DA029 /* StepperView.swift */; };
+		74F0C4A225C80B1D008DA029 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C4A125C80B1D008DA029 /* SliderView.swift */; };
+		74F0C4A725C80F6D008DA029 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C4A625C80F6D008DA029 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		74F0C47525C297C1008DA029 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		74F0C47925C2991F008DA029 /* DatePickerStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerStyleView.swift; sourceTree = "<group>"; };
 		74F0C47D25C2A0C6008DA029 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		74F0C4A125C80B1D008DA029 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		74F0C4A625C80F6D008DA029 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		74977BAA25B935A4005B76A1 /* SystemViews */ = {
 			isa = PBXGroup;
 			children = (
+				74F0C4A525C80F63008DA029 /* Alert */,
+				74F0C4A025C80B07008DA029 /* Slider */,
 				74F0C47C25C2A0BD008DA029 /* Stepper */,
 				74F0C47425C297B2008DA029 /* DatePicker */,
 				74977C0A25BFDD6C005B76A1 /* Toggle */,
@@ -131,6 +137,22 @@
 				74F0C47D25C2A0C6008DA029 /* StepperView.swift */,
 			);
 			path = Stepper;
+			sourceTree = "<group>";
+		};
+		74F0C4A025C80B07008DA029 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				74F0C4A125C80B1D008DA029 /* SliderView.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		74F0C4A525C80F63008DA029 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				74F0C4A625C80F6D008DA029 /* AlertView.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +228,14 @@
 				74977BC225B93609005B76A1 /* SpacerView.swift in Sources */,
 				74977BAC25B935A4005B76A1 /* AppDelegate.swift in Sources */,
 				74977C0725BFB042005B76A1 /* ButtonView.swift in Sources */,
+				74F0C4A725C80F6D008DA029 /* AlertView.swift in Sources */,
 				74977BAE25B935A4005B76A1 /* SceneDelegate.swift in Sources */,
 				74F0C47A25C2991F008DA029 /* DatePickerStyleView.swift in Sources */,
 				74F0C47625C297C1008DA029 /* DatePickerView.swift in Sources */,
 				74977C0C25BFDD79005B76A1 /* ToggleView.swift in Sources */,
 				74F0C47E25C2A0C6008DA029 /* StepperView.swift in Sources */,
 				74977BB025B935A4005B76A1 /* ContentView.swift in Sources */,
+				74F0C4A225C80B1D008DA029 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
