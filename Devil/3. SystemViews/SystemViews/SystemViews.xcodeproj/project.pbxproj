@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742A20EB25DE28A500A18610 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742A20EA25DE28A500A18610 /* ActionSheetView.swift */; };
 		74977BAC25B935A4005B76A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74977BAB25B935A4005B76A1 /* AppDelegate.swift */; };
 		74977BAE25B935A4005B76A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74977BAD25B935A4005B76A1 /* SceneDelegate.swift */; };
 		74977BB025B935A4005B76A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74977BAF25B935A4005B76A1 /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		742A20EA25DE28A500A18610 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
 		74977BA825B935A4005B76A1 /* SystemViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74977BAB25B935A4005B76A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74977BAD25B935A4005B76A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742A20E925DE289200A18610 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				742A20EA25DE28A500A18610 /* ActionSheetView.swift */,
+			);
+			path = ActionSheet;
+			sourceTree = "<group>";
+		};
 		74977B9F25B935A4005B76A1 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		74977BAA25B935A4005B76A1 /* SystemViews */ = {
 			isa = PBXGroup;
 			children = (
+				742A20E925DE289200A18610 /* ActionSheet */,
 				74F0C4A525C80F63008DA029 /* Alert */,
 				74F0C4A025C80B07008DA029 /* Slider */,
 				74F0C47C25C2A0BD008DA029 /* Stepper */,
@@ -235,6 +246,7 @@
 				74977C0C25BFDD79005B76A1 /* ToggleView.swift in Sources */,
 				74F0C47E25C2A0C6008DA029 /* StepperView.swift in Sources */,
 				74977BB025B935A4005B76A1 /* ContentView.swift in Sources */,
+				742A20EB25DE28A500A18610 /* ActionSheetView.swift in Sources */,
 				74F0C4A225C80B1D008DA029 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
